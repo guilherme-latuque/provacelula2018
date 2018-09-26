@@ -9,6 +9,6 @@ class SubCategoriaController extends Controller
     public function index() {
         $subcategorias = SubCategoria::all();
         $total = SubCategoria::all()->count();
-        return view('include-produto', compact('subcategorias', 'total'));
+        return view('list-produto', compact('subcategorias', 'total'));
     }
 }
